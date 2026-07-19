@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    /*height: 100%;*/
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+body {
+    background-image: linear-gradient(to right, #2D3F54, #52647A);
+
+}
+
+main { 
+    background-color: white;
+    width: 600px;
+    padding: 10px; /* Chamou de "acolchoamento". Seria a margem, um espaço pra letra não ficar toda expremida nas paredes do bloco e do site */
+    margin: auto; /* Serve para que o conteudo se centralize e se ajuste automaticamente centralizado às margens da tela conforme eu aumento ou diminuo o tamanho da tela*/
+    border-radius: 3%; /* Arredondamento de borda */
+    box-shadow: 5px 5px 15px #1dbd8d56;  /* Este é um comando para inserirmos uma sombra no quadrado que colocamos o texto (que estamos trabalhando acima). Basicamente, ela segue uma ordem: o 1°  parametro é quanto essa sombra andará para o lado; o 2° parametro é o quanto essa sombra vai andar para baixo; o 3° parametro é o quanto essa sombra vai "espalhar", ou seja, o quanto ela vai esfumaçando em degradê até acabar o tamanho definido nos parametros 1 e 2; e o 4° parametro é a cor e a transparencia.*/
+
+
+}
+
+h1 {
+    color: #028183;
+    text-align: center; /* Alinhar titulo no meio */
+    text-shadow: 1px 1px 2px #028183;
+
+}
+
+h2 { 
+    color:#0cb8ac;
+
+}
+
+p {
+    text-align: justify;
+
+}

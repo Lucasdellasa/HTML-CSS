@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: rgb(0, 196, 196);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações:</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag b (não semântica)</p>
+    <p>Nesta frase, temos um <strong>termo em destaque</strong> usando a tag strong (semântica)</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica)</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p>
+    <p>Visualmente, ambos são identicos, mas para o HTML, a tag recebe significado nos casos semanticos, destacando e dando enfase nos casos apresentados</p>
+    <p>A tag b e i são tags do HTML4, que podem se tornar obsoletas em breve. Strong e em são do HTML5.</p>
+    <h1>APESAR DISSO TUDO</h1>
+    <p>O HTML tratará conteudo, não forma. Para forma, trabalharemos com o CSS, logo, não ha muita preocupação neste caso, bem como não havia nos tamanhos das letras</p>  
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag Mark, que comumente será amarelo, mas podendo alterar a cor desta marcação através de CSS, porque, mais uma vez, marcação é forma, não conteudo.</p>
+    <p>Sendo assim, usaremos dentro da tag Mark o style <mark style="background-color: rgb(173, 253, 173);">conforme este exemplo</mark>.</p>
+    <p>Seria possivel fazer essa mesma troca de cor mark a mark, ou generalizar todos os marks para uma cor especifica que eu desejo. Para isso devo mexer no Head do projeto</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste paragrafo, porém o big está obsoleto e o small não. Porque? Provavelmente porque o big não dá sentido de significado, tendo objetivo apenas forma, representar letras maiores, enquanto o small pode, por exemplo, ser usado como observações ou detalhes menores, como contratos, ou direitos autorais. Este raciocinio não é comprovado, mas pode auxiliar na linha de raciocínio...</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar<del> um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado</p>
+    <p>Existe também a tag <u>sublinhado</u>, mas é, novamente, não semântica.</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Quando, por exemplo, quero inserir coisas do tipo x<sup>2</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+</body>
+</html>

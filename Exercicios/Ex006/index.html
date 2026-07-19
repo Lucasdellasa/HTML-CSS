@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com liks!</title>
+</head>
+<body>
+    <h1>Usando links externos</h1><!--Quando for um link externo, sempre recomendamos usar o target="_blank" e o rel="external" , porque o usuario nunca vai voltar para o seu link/site se ele for apenas jogado para outro site-->
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">repositório publico no Github</a></p>
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/@cursoemvideo">canal gratuito no YouTube</a></p>
+    
+
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira pagina do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda pagina</a></p>
+    <p>Você pode acessar nossa <a href="noticias/pag003.html" rel="next"> pagina de noticias</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="downloads/dermatologista.pdf">exame dermatologista</a></li><!--deviamos usar o download="dermatologista" type="application/pdf" mas não está funcionando. Em zip funciona-->
+        <li><a href="downloads/dermatologista.zip" download="dermatologista" type="application/zip">em zip</a></li>
+    </ul>
+</body>
+</html>

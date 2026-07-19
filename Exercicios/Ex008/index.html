@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+<h1>Imagem Dinamica</h1>
+<p>Tente abrir este site em varios dispositivos diferentes, ou simplesmente aumente e diminua o zoom do seu navegador/tamanho do seu navegador.</p>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/fotoP.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/fotoM.png" type="image/png">
+    <img src="Imagens/fotoG.png" alt="Imagem flexivel">
+</picture>
+
+<!-- Maneira mais simples:
+ 
+<h1>Reproduzindo Áudio</h1>
+<p>Vamos aprnder a reproduzir audios em HTNML</p>
+<audio src="midia/musica1.mp3" controls autoplay></audio> mp3 wav ogg  -> formatos compativeis -->
+
+<audio preload="metadata" autoplay controls loop><!-- auto é perigoso, pq só vai abrir o site depois de carregar totalmente o audio. None não carrega nada e só dará play quando der play nos controles. O ideal é por metadata. O ideal é ter o arquivo de audio em mais de um formato. O ideal é começar pelo mpeg (mp3), depois o ogg e só por fim o wav. O wav é muito pesado.-->
+    <source src="midia/musica1.mp3" type="audio/mpeg"> <!--No material em pdf tem lá mais informações com varios midiatypes para consultar. mpeg é mp3. ogg continua é audio/ogg mesmo e o wav é audio/wav. Só mp3 é o diferentão...-->
+    <p>Se nenhum dos 3 reproduzir, então o seu navegador não consegue reproduzir audio. Clique <a href="midia/musica1.mp3">aqui</a> para baixar o arquivo MP3.</p>    
+
+</audio>
+
+
+</body>
+</html>

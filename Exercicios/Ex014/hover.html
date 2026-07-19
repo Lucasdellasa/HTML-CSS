@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+       /*
+        div > p {
+            display: none;
+        }
+    
+        div:hover > p {
+            display: block;
+            color: antiquewhite;
+            background-color: lightslategray;
+        }
+
+        div:hover{
+            color: rgb(128, 158, 240);
+        }
+*/
+
+         div#botao1 {
+            width: 150px;
+            height: 150px;
+            background-color: lightslategray;
+            border: 3px solid black;
+            text-align: center ;
+            font-size: x-large;
+         }
+
+        div#botao1:hover {
+            background-color: rgb(147, 240, 128);
+        }   
+
+        div#botao1 > p {
+            color: lightcoral;
+            text-align: center;
+            display: none; 
+        }   
+
+        div#botao1:hover > p {
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover e texto escondido</h1>
+    <p>Passe o mouse aqui</p>
+    <div id="botao1">Aqui
+        <p>Selecionar</p>
+    </div>
+    <p>Fim do teste</p>
+
+</body>
+</html>
