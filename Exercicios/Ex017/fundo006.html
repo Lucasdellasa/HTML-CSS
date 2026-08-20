@@ -6,18 +6,30 @@
     <title>Document</title>
     <style>
         body{
-            background-color: black;
+           /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
-            background-repeat: no-repeat;
             background-position: center center;
+            background-repeat: no-repeat;
             background-size: cover;
             height: 100vh;
             margin: 0px;
+
+            
+            Shorthand de Background:
+            a ordem é
+            Color - Image - Position - Repeat - [Size] - Attachment    
+            POREM, o size, por algum motivo, não funciona. Está nas regras atuais no manual de html e css e deveria funcionar, mas não funciona, então, justamente o Size (que está entre colchetes) deverá ser posto de fora. Talvez no futuro funcione
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+
+
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 2px solid darkblue;
@@ -33,9 +45,9 @@
     <main>
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut impedit quisquam minus excepturi, distinctio deserunt suscipit esse neque dolores pariatur perspiciatis corrupti repellendus error quaerat voluptatibus, magni qui voluptates. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis reiciendis quo quam blanditiis minus excepturi ullam quaerat rem pariatur aliquid ipsum eligendi quisquam minima optio neque voluptatibus eaque, nulla velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit libero quaerat omnis perspiciatis necessitatibus hic magnam eum facere laboriosam doloribus quia autem nobis architecto! Mollitia earum corporis dolor quas?</p>
-
-
-
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut impedit quisquam minus excepturi, distinctio deserunt suscipit esse neque dolores pariatur perspiciatis corrupti repellendus error quaerat voluptatibus, magni qui voluptates. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis reiciendis quo quam blanditiis minus excepturi ullam quaerat rem pariatur aliquid ipsum eligendi quisquam minima optio neque voluptatibus eaque, nulla velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit libero quaerat omnis perspiciatis necessitatibus hic magnam eum facere laboriosam doloribus quia autem nobis architecto! Mollitia earum corporis dolor quas?</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut impedit quisquam minus excepturi, distinctio deserunt suscipit esse neque dolores pariatur perspiciatis corrupti repellendus error quaerat voluptatibus, magni qui voluptates. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis reiciendis quo quam blanditiis minus excepturi ullam quaerat rem pariatur aliquid ipsum eligendi quisquam minima optio neque voluptatibus eaque, nulla velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit libero quaerat omnis perspiciatis necessitatibus hic magnam eum facere laboriosam doloribus quia autem nobis architecto! Mollitia earum corporis dolor quas?</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ut impedit quisquam minus excepturi, distinctio deserunt suscipit esse neque dolores pariatur perspiciatis corrupti repellendus error quaerat voluptatibus, magni qui voluptates. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis reiciendis quo quam blanditiis minus excepturi ullam quaerat rem pariatur aliquid ipsum eligendi quisquam minima optio neque voluptatibus eaque, nulla velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit libero quaerat omnis perspiciatis necessitatibus hic magnam eum facere laboriosam doloribus quia autem nobis architecto! Mollitia earum corporis dolor quas?</p>
 
 
     </main>
