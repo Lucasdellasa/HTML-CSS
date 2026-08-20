@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 8</title>
 <style>
-    *{
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Playwrite+DE+SAS+Guides&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3: "Playwrite DE SAS Guides", cursive;
+}
+
+    * {
         margin: 0px;
         padding: 0px;
+        overflow-x: hidden;
     }
 
     body {
         background-color: lightslategray;
-        min-width: 100vh;
+        min-width: 100vw;
+        font-family: var(--fonte1);
     }
 
     header {
@@ -22,8 +32,10 @@
     }
 
     header > h1 {
-        padding-top: 30px;
+        padding-top: 20px;
         font-variant: small-caps;
+        font-family: var(--fonte2);
+        font-size: 3.5em;
     }
 
     header > p {
@@ -44,6 +56,12 @@
         padding-top: 10vh;
         padding-bottom: 10vh;
         line-height: 2em;
+        font-family: var(--fonte3);
+        font-size: 2.0vw;
+    }
+
+    section > p {
+        padding: 1em;
     }
 
     section.normal {
@@ -55,16 +73,32 @@
     section.imagem {
         background-color: rgb(151, 149, 149);
         color: white;
-        padding-left: 85vh;
-
+        display: flex;
+        justify-content: flex-end; /* Joga o conteúdo para a direita */
+        padding-right: 30px;
+        box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.658);
+        background-size: cover;
+        background-attachment: fixed;
     }
 
-    section.imagem p{
-        background-color: rgba(0, 0, 0, 0.144);
-        width: 400px;
-
+    section.imagem > p {
+        background-color: rgba(0, 0, 0, 0.466);
+        max-width: 90%;
+        padding-left: 3px;
+        padding-right: 3px;
+        margin-right: 1.5vw;
+        text-shadow: 1px 2px 0px black;
     }
 
+    section#img01 {
+        background-image: url('imagens/background001.jpg');
+        background-position: right center;
+        
+    }
+
+    section#img02 {
+        background-image: url('imagens/background002.jpg');
+    }
 
     footer{
         background-color: black;
@@ -99,7 +133,7 @@
             </p>
         </section>
 
-        <section class="imagem">
+        <section class="imagem" id="img01">
             <p>
                 Não é mais como era antes <br>
                 É tudo abreviado <br>
@@ -134,7 +168,7 @@
             
         </section>
 
-        <section class="imagem">
+        <section class="imagem" id="img02">
             <p>
                 Tenho saudade das cartas <br>
                 Escritas com a própria mão <br>
@@ -173,7 +207,7 @@
 
 
     <footer>
-        site criado por <a target="_blank" href="https://github.com/Lucasdellasa">Lucas Della Savia</a> para o <a target="_blank" href="https://www.cursoemvideo.com">CursoemVideo</a>
+        Site criado por <a target="_blank" href="https://github.com/Lucasdellasa">Lucas Della Savia</a> para o <a target="_blank" href="https://www.cursoemvideo.com">CursoemVideo</a>
     </footer>
 
 </body>
