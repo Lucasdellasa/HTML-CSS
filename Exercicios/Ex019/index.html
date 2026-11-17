@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio de Tabela</title>
-
-
+    <title>Documento</title>
 
 </head>
 
 <body>
-    
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iUsu"> Usuario:</label>
+            <input type="text" name="Usu" id="iUsu" required minlength="3" maxlength="12" autocomplete="username">
+        </p>
+        <p>
+            <label for="iSen">Senha:</label>
+            <input type="password" name="Sen" id="iSen" required minlength="2" maxlength="10" placeholder="Senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 
+<label for="imedia">Média</label>
+<input type="number" name="media" id="imedia" min="0" max="10" step="0.1">
 
-
-    
 </body>
 </html>
